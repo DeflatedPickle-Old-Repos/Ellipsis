@@ -1,5 +1,10 @@
 {
 	"name": "Ellipsis",
 	"version": "1.0.0",
-	"main": "main.js"
+	"description": "A simple Electron-based text editor.",
+
+	"main": "main.js",
+
+	"author": "DeflatedPickle",
+	"license": "GPL-3.0"
 }
