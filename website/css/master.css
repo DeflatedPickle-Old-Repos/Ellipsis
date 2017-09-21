@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: "Encode Sans Expanded", sans-serif;
 }
 
 html, body {
@@ -21,6 +22,7 @@ textarea {
   border: none;
   width: 100%;
   height: 100%;
+  font-family: "Roboto Mono", monospace;;
   color: white;
   background: #06161F;
 }
