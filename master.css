@@ -11,6 +11,10 @@ html, body {
   background: #06161F;
 }
 
+label {
+  color: white;
+}
+
 textarea {
   resize: none;
   outline: none;
@@ -28,6 +32,11 @@ textarea {
   background: #0C2430;
 }
 
+#mainframe {
+  width: 100%;
+  height: 100%;
+}
+
 #statusbar {
   position: fixed;
   bottom: 0;
@@ -39,8 +48,8 @@ textarea {
 	width: 50px;
 	height: 30px;
 	margin: 5;
-	background: #063942;
 	color: #FFE9E7;
+	background: #063942;
 	border: none;
 	outline: none;
 }
