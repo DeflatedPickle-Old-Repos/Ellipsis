@@ -31,6 +31,14 @@ button {
   outline: none;
 }
 
+h2 {
+  margin: 5px;
+}
+
+h3 {
+  margin: 5px;
+}
+
 #toolbar {
   position: fixed;
   top: 0;
