@@ -13,6 +13,14 @@
 		<script src="js/browser_check.js"></script>
 		<script src="js/events.js"></script>
 		<script src="js/handlers.js"></script>
+
+		<script>
+			window.onclick = function(argument) {
+				if (argument.target == document.getElementById("aboutWindow")){
+					document.getElementById("aboutWindow").style.display = "none"
+				}
+			}
+		</script>
 	</head>
 
 	<body>
@@ -22,12 +30,13 @@
 
 		<!-- The Toolbar -->
 		<div id="toolbar">
-			<button class="toolbutton" onmouseenter="onMouseEnter('Create a new file.')", onmouseleave="onMouseLeave()">New</button>
-			<button class="toolbutton" onmouseenter="onMouseEnter('Open a file.')", onmouseleave="onMouseLeave()" onclick="document.getElementById('open-file').click();">Open</button>
+			<button class="toolbutton left" onmouseenter="onMouseEnter('Create a new file.')", onmouseleave="onMouseLeave()">New</button>
+			<button class="toolbutton left" onmouseenter="onMouseEnter('Open a file.')", onmouseleave="onMouseLeave()" onclick="document.getElementById('open-file').click();">Open</button>
 			<script>document.getElementById("open-file").addEventListener('change', handleFilesSelected, false)</script>
-			<button class="toolbutton" onmouseenter="onMouseEnter('Save the current file.')", onmouseleave="onMouseLeave()">Save</button>
+			<button class="toolbutton left" onmouseenter="onMouseEnter('Save the current file.')", onmouseleave="onMouseLeave()">Save</button>
 
 			<button class="toolbutton right" onmouseenter="onMouseEnter('Exit the program.')", onmouseleave="onMouseLeave()">Exit</button>
+			<button class="toolbutton right" onmouseenter="onMouseEnter('Open the About window.')", onmouseleave="onMouseLeave()" onclick="document.getElementById('aboutWindow').style.display='block'">About</button>
 		</div>
 
 		<!-- The Main Frame -->
@@ -38,10 +47,31 @@
 				document.getElementById("text").addEventListener("drop", handleFilesDropped, false)
 			</script>
 		</div>
-
-		<!-- The Statusbar -->
-		<div id="statusbar">
-			<label id="statuslabelmain" class="statuslabel"></label>
-		</div>
 	</body>
+
+	<!-- The Statusbar -->
+	<div id="statusbar">
+		<label id="statusLabelMain" class="statuslabel"></label>
+	</div>
+
+	<!-- The About Window -->
+	<div id="aboutWindow" class="popup">
+		<div class="popupContent">
+			<header class="popupHeader" style="padding-top: 1px">
+				<button class="right" style="margin: 5px" onclick="document.getElementById('aboutWindow').style.display='none'">X</button>
+				<h2>About Window</h2>
+			</header>
+
+			<div style="padding: 5px">
+				<label> <!-- Use "<br>" at the end of each line. -->
+					Developer: <i>DeflatedPickle</i> <br>
+					Licence: <i>GPL-3.0</i> <br>
+					<h3>Credits:</h3>
+					Packages: <i>Electron</i>. <br>
+					Fonts: <i>Roboto Mono, Encode Sans Expanded</i>. <br>
+					Colour Palette: <i>nocturno</i>. <br>
+				</label>
+			</div>
+		</div>
+	</div>
 </html>
