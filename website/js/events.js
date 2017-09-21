@@ -1,7 +1,7 @@
 function onMouseEnter(text){
-	document.getElementById("statuslabelmain").innerHTML = text
+	document.getElementById("statusLabelMain").innerHTML = text
 }
 
 function onMouseLeave(){
-	document.getElementById("statuslabelmain").innerHTML = ""
+	document.getElementById("statusLabelMain").innerHTML = ""
 }
