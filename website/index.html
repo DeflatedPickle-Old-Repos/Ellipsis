@@ -4,9 +4,12 @@
 	<head>
 		<title>Ellipsis</title>
 
+		<!-- Load Assets -->
 		<link rel="stylesheet" href="css/master.css">
 
+		<!-- Run Scripts -->
 		<script src="js/browser_check.js"></script>
+		<script src="js/events.js"></script>
 	</head>
 
 	<body>
@@ -32,15 +35,4 @@
 			<label id="statuslabelmain" class="statuslabel"></label>
 		</div>
 	</body>
-
-	<script>
-		function onMouseEnter(text){
-			document.getElementById("statuslabelmain").innerHTML = text
-		}
-
-		function onMouseLeave(){
-			document.getElementById("statuslabelmain").innerHTML = ""
-		}
-
-	</script>
 </html>
