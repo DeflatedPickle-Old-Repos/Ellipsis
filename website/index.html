@@ -5,14 +5,19 @@
 		<title>Ellipsis</title>
 
 		<link rel="stylesheet" href="css/master.css">
+
+		<script src="js/browser_check.js"></script>
 	</head>
 
 	<body>
+		<!-- Dialogs -->
+		<input id="open-file" type="file" name="file-name" style="display: none;"></input>
+
 		<!-- The Toolbar -->
 		<div id="toolbar">
 			<button class="toolbutton" onmouseenter="onMouseEnter('Create a new file.')", onmouseleave="onMouseLeave()">New</button>
-			<button class="toolbutton" onmouseenter="onMouseEnter('Open a file.')", onmouseleave="onMouseLeave()">Open</button>
-			<button class="toolbutton" onmouseenter="onMouseEnter('Save the current file.')", onmouseleave="onMouseLeave()">Save</button>
+			<button class="toolbutton" onmouseenter="onMouseEnter('Open a file.')", onmouseleave="onMouseLeave()" onclick="document.getElementById('open-file').click();">Open</button>
+			<button class="toolbutton" onmouseenter="onMouseEnter('Save the current file.')", onmouseleave="onMouseLeave()" onclick="document.getElementById('save-file').click();">Save</button>
 
 			<button class="toolbutton right" onmouseenter="onMouseEnter('Exit the program.')", onmouseleave="onMouseLeave()">Exit</button>
 		</div>
