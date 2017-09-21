@@ -47,29 +47,31 @@
 				document.getElementById("text").addEventListener("drop", handleFilesDropped, false)
 			</script>
 		</div>
+	</body>
 
-		<!-- The Statusbar -->
-		<div id="statusbar">
-			<label id="statusLabelMain" class="statuslabel"></label>
-		</div>
+	<!-- The Statusbar -->
+	<div id="statusbar">
+		<label id="statusLabelMain" class="statuslabel"></label>
+	</div>
 
-		<!-- The About Window -->
-		<div id="aboutWindow" class="popup">
-			<div class="popupContent">
-				<header class="popupHeader" style="padding-top: 1px">
-					<button class="right" style="margin: 5px" onclick="document.getElementById('aboutWindow').style.display='none'">X</button>
-					<h2>About Window</h2>
-				</header>
+	<!-- The About Window -->
+	<div id="aboutWindow" class="popup">
+		<div class="popupContent">
+			<header class="popupHeader" style="padding-top: 1px">
+				<button class="right" style="margin: 5px" onclick="document.getElementById('aboutWindow').style.display='none'">X</button>
+				<h2>About Window</h2>
+			</header>
 
-				<div style="padding: 5px">
-					<label> <!-- Use "<br>" at the end of each line. -->
-						<h3>Credits:</h3>
-						Packages: <i>Electron</i>. <br>
-						Fonts: <i>Roboto Mono, Encode Sans Expanded</i>. <br>
-						Colours: <i>nocturno</i>. <br>
-					</label>
-				</div>
+			<div style="padding: 5px">
+				<label> <!-- Use "<br>" at the end of each line. -->
+					Developer: <i>DeflatedPickle</i> <br>
+					Licence: <i>GPL-3.0</i> <br>
+					<h3>Credits:</h3>
+					Packages: <i>Electron</i>. <br>
+					Fonts: <i>Roboto Mono, Encode Sans Expanded</i>. <br>
+					Colour Palette: <i>nocturno</i>. <br>
+				</label>
 			</div>
 		</div>
-	</body>
+	</div>
 </html>
