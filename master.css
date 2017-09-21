@@ -1,11 +1,41 @@
+body {
+  margin: 0;
+  background: #06161F;
+}
+
 #toolbar {
   position: fixed;
   top: 0;
   width: 100%;
+  background: #0C2430;
 }
 
 #statusbar {
   position: fixed;
   bottom: 0;
   width: 100%;
+  background: #0C2430;
+}
+
+.toolbutton{
+	width: 50px;
+	height: 30px;
+	margin: 5;
+	background: #063942;
+	color: #FFE9E7;
+	border: none;
+	outline: none;
+}
+
+.toolbutton:hover{
+  transform: scale(1.1);
+}
+
+.toolbutton:active{
+  transform: scale(0.9);
+}
+
+.right {
+  position: fixed;
+  right: 0;
 }
