@@ -56,8 +56,14 @@
 		<!-- The About Window -->
 		<div id="aboutWindow" class="popup">
 			<div class="popupContent">
-				<button class="right" onclick="document.getElementById('aboutWindow').style.display='none'">X</button>
-				<p>Some cool text.</p>
+				<header class="popupHeader" style="padding-top: 1px">
+					<button class="right" style="margin: 10px" onclick="document.getElementById('aboutWindow').style.display='none'">X</button>
+					<h2>About Window</h2>
+				</header>
+
+				<div>
+					<label style="padding-left: 5px">Blah.</label>
+				</div>
 			</div>
 		</div>
 	</body>
