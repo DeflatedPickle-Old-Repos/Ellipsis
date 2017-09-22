@@ -13,6 +13,7 @@
 		<script src="js/checks.js"></script>
 		<script src="js/events.js"></script>
 		<script src="js/handlers.js"></script>
+		<script src="js/files.js"></script>
 
 		<script>
 			window.onclick = function(argument) {
@@ -30,8 +31,8 @@
 
 		<!-- The Toolbar -->
 		<div id="toolbar">
-			<button class="toolbutton left" onmouseenter="onMouseEnter('Create a new file.')", onmouseleave="onMouseLeave()">New</button>
-			<button class="toolbutton left" onmouseenter="onMouseEnter('Open a file.')", onmouseleave="onMouseLeave()" onclick="document.getElementById('open-file').click();">Open</button>
+			<button class="toolbutton left" onmouseenter="onMouseEnter('Create a new file.')", onmouseleave="onMouseLeave()" onclick="newFile()">New</button>
+			<button class="toolbutton left" onmouseenter="onMouseEnter('Open a file.')", onmouseleave="onMouseLeave()" onclick="document.getElementById('open-file').click()">Open</button>
 			<script>document.getElementById("open-file").addEventListener('change', handleFilesSelected, false)</script>
 			<button class="toolbutton left" onmouseenter="onMouseEnter('Save the current file.')", onmouseleave="onMouseLeave()">Save</button>
 
