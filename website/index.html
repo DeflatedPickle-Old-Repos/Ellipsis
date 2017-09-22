@@ -31,13 +31,13 @@
 
 		<!-- The Toolbar -->
 		<div id="toolbar">
-			<button class="toolbutton left" onmouseenter="onMouseEnter('Create a new file.')", onmouseleave="onMouseLeave()" onclick="newFile()">New</button>
-			<button class="toolbutton left" onmouseenter="onMouseEnter('Open a file.')", onmouseleave="onMouseLeave()" onclick="document.getElementById('open-file').click()">Open</button>
+			<button class="toolbutton left" onmouseenter="changeStatusLabel('Create a new file.')", onmouseleave="clearStatusLabel()" onclick="newFile()">New</button>
+			<button class="toolbutton left" onmouseenter="changeStatusLabel('Open a file.')", onmouseleave="clearStatusLabel()" onclick="document.getElementById('open-file').click()">Open</button>
 			<script>document.getElementById("open-file").addEventListener('change', handleFilesSelected, false)</script>
-			<button class="toolbutton left" onmouseenter="onMouseEnter('Save the current file.')", onmouseleave="onMouseLeave()">Save</button>
+			<button class="toolbutton left" onmouseenter="changeStatusLabel('Save the current file.')", onmouseleave="clearStatusLabel()">Save</button>
 
-			<button class="toolbutton right" onmouseenter="onMouseEnter('Exit the program.')", onmouseleave="onMouseLeave()">Exit</button>
-			<button class="toolbutton right" onmouseenter="onMouseEnter('Open the About window.')", onmouseleave="onMouseLeave()" onclick="document.getElementById('aboutWindow').style.display='block'">About</button>
+			<button class="toolbutton right" onmouseenter="changeStatusLabel('Exit the program.')", onmouseleave="clearStatusLabel()">Exit</button>
+			<button class="toolbutton right" onmouseenter="changeStatusLabel('Open the About window.')", onmouseleave="clearStatusLabel()" onclick="document.getElementById('aboutWindow').style.display='block'">About</button>
 		</div>
 
 		<!-- The Main Frame -->

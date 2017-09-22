@@ -1,7 +1,7 @@
-function onMouseEnter(text){
+function changeStatusLabel(text){
 	document.getElementById("statusLabelMain").innerHTML = text
 }
 
-function onMouseLeave(){
-	document.getElementById("statusLabelMain").innerHTML = ""
+function clearStatusLabel(){
+	changeStatusLabel("")
 }
